@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playstation 4 Gold Edition</title>
+    <style>
+        body {
+            background-image: url('polosan.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: left;
+            color: #333;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ff9900;
+        }
+        .transaction-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .transaction-link:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Playstation 4 Gold Edition</h1>
+    <hr>
+    <table border="0" cellpadding="3">
+        <tr>
+            <td width="75%">
+                <h2>Features:</h2>
+                <ul>
+                    <li>Barang baru</li>
+                    <li>Limited edition</li>
+                    <li>Varian warna gold</li>
+                    <li>Hardisk 1TB</li>
+                    <li>Controller 1</li>
+                    <li>Kabel USB C</li>
+                    <li>Buku panduan</li>
+                    <li class="highlight">Harga: 7jt</li>
+                </ul>
+            </td>
+            <td>
+                <img src="playstationgold.jpg" alt="Playstation 4 Gold Edition">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <a href="register.html" target="_blank" class="transaction-link">Forum Pembelian</a>
+            </td>
+        </tr>
+    </table>
+    <script>
+        document.querySelector('.transaction-link').addEventListener('click', function() {
+            alert('Anda akan diarahkan ke forum pembelian.');
+        });
+    </script>
+</body>
+</html>

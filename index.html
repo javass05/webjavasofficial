@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout dengan Iframe</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 15%;
+            background-color: #f4f4f4;
+            border-right: 1px solid #ddd;
+        }
+        .content {
+            width: 85%;
+            border: none;
+            height: 100%;
+            overflow: auto;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <iframe src="fkiri.html"></iframe>
+    </div>
+    <div class="content" id="mainContent">
+        <iframe src="fkanan.html" name="kanan"></iframe>
+    </div>
+    <script>
+        document.querySelector('.sidebar iframe').addEventListener('load', function() {
+            console.log('Sidebar loaded');
+        });
+        
+        document.querySelector('.content iframe').addEventListener('load', function() {
+            console.log('Content loaded');
+        });
+    </script>
+</body>
+</html>

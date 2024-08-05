@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Saya</title>
+    <style>
+        body {
+            background-image: url('polosan.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BIODATA SAYA</h1>
+        <hr>
+        <div align="center">
+            <img src="Profil.jpg" width="20%" alt="Profil">
+        </div>
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>: <span class="highlight">Abia Javas Salih</span></td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>: <span class="highlight">10523019</span></td>
+            </tr>
+            <tr>
+                <td>Kelas</td>
+                <td>: <span class="highlight">IS-1</span></td>
+            </tr>
+            <tr>
+                <td>UTS</td>
+                <td>: <span class="highlight">Komputer Aplikasi Teknologi Informasi</span></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        document.querySelectorAll('td').forEach(function(td) {
+            td.addEventListener('click', function() {
+                alert(this.textContent.trim());
+            });
+        });
+    </script>
+</body>
+</html>

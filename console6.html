@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playstation 2</title>
+    <style>
+        body {
+            background-image: url('polosan.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: left;
+            color: #333;
+            margin-left: 20px;
+        }
+        hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ff9900;
+        }
+        .transaction-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .transaction-link:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Playstation 2</h1>
+    <hr>
+    <table border="0" cellpadding="3">
+        <tr>
+            <td width="75%">
+                <h2>Features:</h2>
+                <ul>
+                    <li>Barang baru</li>
+                    <li>Varian warna hitam</li>
+                    <li>Kabel type lightning</li>
+                    <li>Buku panduan</li>
+                    <li>Controller 2</li>
+                    <li>Hardisk 2</li>
+                    <li>Memory 8MB</li>
+                    <li class="highlight">Harga: 2,5jt</li>
+                </ul>
+            </td>
+            <td>
+                <img src="playstation2.jpg" alt="Playstation 2">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <a href="register.html" target="_blank" class="transaction-link">Forum Pembelian</a>
+            </td>
+        </tr>
+    </table>
+    <script>
+        document.querySelector('.transaction-link').addEventListener('click', function() {
+            alert('Anda akan diarahkan ke forum pembelian.');
+        });
+    </script>
+</body>
+</html>

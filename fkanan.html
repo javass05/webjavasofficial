@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJS Station Center</title>
+    <style>
+        body {
+            background-image: url('polosan.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px 0;
+            border-top: 1px solid #ddd;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AJS STATION CENTER</h1>
+        <hr>
+        <h2>Tentang</h2>
+        <p>Website ini dibuat untuk menjual console playstation dari mulai mesin hingga controler dan memiliki beberapa model. Didirikan pada tahun 2020, AJS CENTER telah berkembang menjadi salah satu pemimpin dalam industri teknologi. Berbasis di daerah Bandung, kami bangga menjadi bagian dari komunitas ini dan berkomitmen untuk menyediakan produk berkualitas tinggi yang memenuhi kebutuhan pelanggan kami.</p>
+        
+        <h2>Misi</h2>
+        <p>Misi kami adalah untuk menyediakan console playstation terbaik di pasaran, dengan fokus pada kualitas, inovasi, dan kepuasan pelanggan. Kami berdedikasi untuk memastikan bahwa setiap produk yang kami tawarkan memenuhi standar tertinggi, sehingga pelanggan kami selalu merasa puas dengan pembelian mereka.</p>
+        
+        <h2>Visi</h2>
+        <p>Visi kami adalah menjadi pemimpin dalam industri ini dan terus berinovasi untuk memenuhi kebutuhan dan harapan pelanggan. Kami bercita-cita untuk menciptakan produk yang tidak hanya berkualitas tinggi tetapi juga ramah lingkungan dan berkelanjutan.</p>
+        
+        <footer>
+            <p>AJS Station Center</p>
+            <p>Jl. Kosambi no 5, Bandung, Kota Bandung</p>
+            <p>&copy; 2024 AJS Station Center. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        // Script untuk menampilkan alert saat paragraf diklik
+        document.querySelectorAll('p').forEach(function(paragraph) {
+            paragraph.addEventListener('click', function() {
+                alert(this.textContent.trim());
+            });
+        });
+    </script>
+</body>
+</html>
